@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+<form method="get" id="registerForm" onsubmit="return registerValidate();">
+	<fieldset>
+		<legend>Register Yourself</legend>
+		<label id="msgRegister" style="color:red; font-size: 18px;"></label>
+		<label class="register">Give your Name *</label>
+		<input type="text" name="name" id="registerName" required class="register" onkeyup="registerNameValidate();">
+		<label class="register">Give your phone</label>
+		<input type="text" name="phone" id="registerPhone" class="register" onkeyup="registerPhoneValidate();">
+		<label class="register">Give your email *</label>
+		<input type="email" name="email" id="registerEmail" required class="register">
+		<label class="register">Give your password*</label>
+		<input type="password" name="password" required id="registerPassword" class="register">
+				<label class="register">Give your photo *</label>
+		<input type="file" name="photo" id="registerPhoto" required required class="register">
+		<input type="submit" value="Register" id="registerSubmit" class="register">
+	</fieldset>
+</form>
+<script type="text/javascript" src="script/javaScript.js"></script>
+</body>
+</html>
